@@ -11,6 +11,7 @@ class QuizQuestion extends Component {
         </section>
         <section className="buttons">
           <ul>
+            {/* Render the QuizQuestionButton component */}
             <QuizQuestionButton
               button_text={this.props.quiz_question.answer_options[0]}
             />
