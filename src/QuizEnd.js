@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 
 class QuizEnd extends Component {
-  handleResetClick() {
-    this.props.resetClickHandler();
-  }
-
   render() {
     return (
       <div>
@@ -14,7 +10,11 @@ class QuizEnd extends Component {
         </a>
       </div>
     );
-  }
+  } // End of render
+
+  handleResetClick() {
+    this.props.resetClickHandler();
+  } // end of handleResetClick
 }
 
 export default QuizEnd;
