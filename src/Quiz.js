@@ -8,7 +8,7 @@ class Quiz extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { quiz_position: 1 };
-	} // End of constructor
+	} // End of constructor.
 
 	render() {
 		const isQuizEnd =
