@@ -11,7 +11,7 @@ class QuizQuestion extends Component {
     if (buttonText === this.props.quiz_question.answer) {
       this.props.showNextQuestionHandler();
     }
-    //Set the incorrect answer state
+    //Set incorrect answer state
     if (this.props.incorrectAnswer) {
       this.setState({
         incorrectAnswer: false,
@@ -25,12 +25,13 @@ class QuizQuestion extends Component {
   render(quiz_question) {
     return (
       <main>
-        <section>
+        <section className="questions">
           <p>{this.props.quiz_question.instruction_text}</p>
         </section>
         <section className="buttons">
           <ul>
-            {/* Render the QuizQuestionButton component */}
+            {/* Render the QuizQuestionButton component.
+                Uses map function to loop through object */}
             {this.props.quiz_question.answer_options.map(
               (answer_options, index) => (
                 <QuizQuestionButton

@@ -4,7 +4,8 @@ class QuizQuestionButton extends Component {
   handleClick() {
     this.props.clickHandler(this.props.button_text);
   }
-  render(button_text) {
+
+  render() {
     return (
       //Parent component has <ul> tag.
       <li>
