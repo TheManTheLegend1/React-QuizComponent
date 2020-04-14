@@ -14,5 +14,5 @@ class QuizQuestionButton extends Component {
 		this.props.clickHandler(this.props.button_text);
 	} // End of handleClick
 }
-
+// Always needed.
 export default QuizQuestionButton;

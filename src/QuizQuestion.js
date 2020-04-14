@@ -8,7 +8,7 @@ class QuizQuestion extends Component {
 		this.state = { incorrectAnswer: false };
 	} // end of Constructor
 
-	render(quiz_question) {
+	render() {
 		return (
 			<main>
 				<section className="questions">
